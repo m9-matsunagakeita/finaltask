@@ -29,10 +29,10 @@ int main(){
   time_t timestamp_end = get_timestamp(need_time_end);
 
   vector<Member> member_list;
-  member_list.push_back(Member("eguchi", 19, "2013-06-15 12:00:00", "2014-12-08 12:00:00"));
-  member_list.push_back(Member("matsunaga", 20, "2015-06-15 12:00:00", "2016-12-08 12:00:00"));
-  member_list.push_back(Member("fujita", 21, "2018-06-15 12:00:00", "2019-12-08 12:00:00"));
-  member_list.push_back(Member("tatsunari", 22, "2020-06-15 12:00:00", "2021-12-08 12:00:00"));
+  member_list.push_back(Member("松永", 22, "2013-06-15 12:00:00", "2014-12-08 12:00:00"));
+  member_list.push_back(Member("江口", 20, "2015-06-15 12:00:00", "2016-12-08 12:00:00"));
+  member_list.push_back(Member("藤田", 21, "2018-06-15 12:00:00", "2019-12-08 12:00:00"));
+  member_list.push_back(Member("山本", 22, "2020-06-15 12:00:00", "2021-12-08 12:00:00"));
 
   vector<string> workable_member_list;
   for (auto itr = member_list.begin(); itr != member_list.end(); itr++) {
@@ -42,7 +42,7 @@ int main(){
       }
   }
 
-  cout << "print person who can work in the time" << endl;
+  cout << "シフトに入れるのは" << endl;
   for (auto itr = workable_member_list.begin(); itr != workable_member_list.end(); itr++) {
       cout << *itr << endl;
   }
